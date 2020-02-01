@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-size: 18px;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+header {
+  padding: 1rem 1rem 2rem;
+  background-image: url(/images/bg-hero-mobile.svg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #e3f7fc;
+  background-blend-mode: screen;
+}
+
+header .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .top img {
+  width: 30%;
+}
+
+header .top a {
+  display: inline-block;
+  text-decoration: none;
+  color: #00252e;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #ffffff;
+  padding: 7px 20px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 1px 4px #808d99;
+          box-shadow: 0 1px 4px #808d99;
+}
+
+header .hero {
+  width: 90%;
+  margin: 5rem auto 0;
+}
+
+header .hero .text h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+header .hero .text p {
+  padding: 2rem 0;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+header .hero .text a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ff52bf;
+  color: #ebfbff;
+  padding: .8rem 4rem;
+  border-radius: 35px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 3rem;
+}
+
+section {
+  padding: 4rem 1rem 1rem;
+  background-color: #fcfcfc;
+}
+
+section .grow, section .flowing, section .users {
+  background-color: #ffffff;
+  padding: 4rem 2rem 3rem;
+  margin-bottom: 2.2rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 2px 10px rgba(214, 213, 213, 0.5);
+          box-shadow: 1px 2px 10px rgba(214, 213, 213, 0.5);
+}
+
+section .grow img, section .flowing img, section .users img {
+  margin-bottom: 4rem;
+}
+
+section .grow h2, section .flowing h2, section .users h2 {
+  font-size: 22px;
+  padding-bottom: 1.5rem;
+}
+
+section .grow p, section .flowing p, section .users p {
+  font-size: 15px;
+  line-height: 1.2rem;
+  color: #808d99;
+  letter-spacing: 1px;
+}
+
+.index {
+  margin: 1rem auto;
+  padding: 3rem 2rem 2rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-box-shadow: 1px 2px 10px rgba(214, 213, 213, 0.5);
+          box-shadow: 1px 2px 10px rgba(214, 213, 213, 0.5);
+}
+
+.index h1 {
+  font-size: 18px;
+  padding-bottom: 1.5rem;
+}
+
+.index a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ff52bf;
+  color: #ebfbff;
+  padding: .8rem 3rem;
+  border-radius: 35px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+
+footer {
+  padding: 8rem 1rem 2rem;
+  background-color: #00252e;
+}
+
+footer #huddle {
+  color: white;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  width: 40%;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+footer .logo > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  grid-column-gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: start;
+}
+
+footer .logo > div img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+footer .logo > div p {
+  color: #ffffff;
+  padding-bottom: 2rem;
+  font-size: 17px;
+}
+
+footer .links {
+  margin-top: 2rem;
+}
+
+footer .links a {
+  display: block;
+  text-align: start;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 17px;
+  padding-bottom: 1.5rem;
+}
+
+footer .social-media a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 2rem 0.5rem 1.5rem;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  padding: 5px 11px;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 14px;
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    padding: 2rem 3rem 3rem;
+  }
+  section {
+    padding: 4rem 6rem 1rem;
+  }
+  section .grow, section .flowing, section .users {
+    padding: 5rem 3rem 4rem;
+    margin-bottom: 3rem;
+  }
+  section .grow h2, section .flowing h2, section .users h2 {
+    font-size: 25px;
+  }
+  section .grow p, section .flowing p, section .users p {
+    font-size: 18px;
+    line-height: 1.5rem;
+  }
+  .index h1 {
+    font-size: 20px;
+  }
+  .index a {
+    font-size: 14px;
+  }
+  footer {
+    padding: 8rem 5rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    padding: 4rem 1rem 3rem;
+  }
+  header .top {
+    padding: 0 2rem;
+  }
+  header .top img {
+    width: 20%;
+  }
+  header .top a {
+    font-size: 18px;
+    padding: .5rem 2.2rem;
+    border-radius: 50px;
+  }
+  header .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1.5fr;
+        grid-template-columns: 1fr 1.5fr;
+    grid-column-gap: 3rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .hero .text {
+    text-align: start;
+  }
+  section .grow {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    grid-column-gap: 2rem;
+        grid-template-areas: "text img";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section .grow img {
+    margin: 0;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: img;
+  }
+  section .grow #text {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: text;
+    text-align: start;
+    padding: 0 10rem 0 2rem;
+  }
+  section .flowing {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    grid-column-gap: 2rem;
+        grid-template-areas: "img text";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section .flowing img {
+    margin: 0;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: img;
+  }
+  section .flowing #text {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: text;
+    text-align: start;
+    padding: 0 2rem 0 10rem;
+  }
+  section .users {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    grid-column-gap: 2rem;
+        grid-template-areas: "text img";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section .users img {
+    margin: 0;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: img;
+  }
+  section .users #text {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: text;
+    text-align: left;
+    padding: 0 10rem 0 2rem;
+  }
+  .index {
+    width: 60%;
+    margin: 1rem auto;
+  }
+  footer {
+    padding: 8rem 3rem 2rem;
+  }
+  footer #huddle {
+    width: 15%;
+  }
+  footer .logo p {
+    width: 85%;
+  }
+  footer .come {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr 1.5fr 1fr;
+        grid-template-columns: 1.5fr 1.5fr 1fr;
+    grid-column-gap: 2rem;
+  }
+  footer .come .logo p {
+    font-size: 18px;
+  }
+  footer .come .links {
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .come .links .in {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 6rem;
+  }
+  footer .come .links .in a {
+    padding-bottom: 1.5rem;
+    font-size: 18px;
+  }
+  footer .come .social-media a {
+    margin: 0 0.2rem;
+  }
+  footer #copy {
+    text-align: right;
+  }
+}
+/*# sourceMappingURL=style.css.map */
